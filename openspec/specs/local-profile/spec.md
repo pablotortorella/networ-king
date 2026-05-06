@@ -81,3 +81,13 @@ The system SHALL move focus to the top-of-page context after saving valid profil
 - **WHEN** the active profile saves valid profile changes
 - **THEN** the system updates the existing profile record
 - **AND** the system returns focus to the top-of-page context that reflects the updated profile information
+
+### Requirement: Show branded welcome before profile use
+
+The system SHALL show the welcome experience with Kleer branding before the user starts using profiles, events, and contacts.
+
+#### Scenario: No profile exists
+
+- **WHEN** the application loads without an active local profile
+- **THEN** the system shows the welcome/profile setup experience branded as `Networ-King by Kleer`
+- **AND** the system shows the Kleer logo at the bottom of that screen
