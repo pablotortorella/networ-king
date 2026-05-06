@@ -24,5 +24,5 @@
 ## 5. Verification
 
 - [x] 5.1 Add or update automated tests for contact media validation, legacy contact loading, and media-aware contact updates.
-- [ ] 5.2 Verify create and edit flows for adding, removing, and replacing contact photos and business card photo.
+- [x] 5.2 Verify create and edit flows for adding, removing, and replacing contact photos and business card photo.
 - [x] 5.3 Run available syntax checks and tests after the contact media changes.

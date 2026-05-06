@@ -4,6 +4,8 @@
   const D = window.NetworKingDomain;
   const M = window.NetworKingMediaStore;
   const app = document.querySelector("#app");
+  const BRAND_NAME = "Networ-King by Kleer";
+  const BRAND_LOGO_SRC = "assets/kleer-black-logo.webp";
 
   let state = D.loadState(window.localStorage);
   let filters = {
@@ -183,7 +185,10 @@
       if (token !== renderToken) {
         return;
       }
-      app.innerHTML = renderProfileSetup();
+      app.innerHTML = `
+        ${renderProfileSetup()}
+        ${renderBrandFooter()}
+      `;
       bindProfileSetup();
       return;
     }
@@ -210,7 +215,7 @@
     app.innerHTML = `
       <header class="topbar">
         <div>
-          <p class="eyebrow">NetworKing</p>
+          <p class="eyebrow">${escapeHtml(BRAND_NAME)}</p>
           <h1 id="page-title" tabindex="-1">Contactos de evento</h1>
         </div>
         <div class="profile-pill">
@@ -242,6 +247,8 @@
               : renderList(events)
         }
       </section>
+
+      ${renderBrandFooter()}
     `;
 
     bindApp(events, activeEventId, profile, editingContact);
@@ -252,8 +259,8 @@
     return `
       <section class="setup-view">
         <div class="brand-block">
-          <p class="eyebrow">NetworKing</p>
-          <h1>Tu libreta rapida para eventos</h1>
+          <p class="eyebrow">Bienvenido</p>
+          <h1>${escapeHtml(BRAND_NAME)}</h1>
           <p>Captura conversaciones, clasifica oportunidades y deja el follow-up listo desde el celular.</p>
         </div>
         <form id="profile-form" class="panel form-stack">
@@ -263,7 +270,7 @@
           </label>
           <label>
             <span>Empresa</span>
-            <input name="companyName" autocomplete="organization" placeholder="Ej: NetworKing">
+            <input name="companyName" autocomplete="organization" placeholder="Ej: Kleer">
           </label>
           <label>
             <span>Rol</span>
@@ -272,6 +279,17 @@
           <button class="primary-button" type="submit">Crear perfil</button>
         </form>
       </section>
+    `;
+  }
+
+  function renderBrandFooter() {
+    return `
+      <footer class="app-footer">
+        <p>&copy; 2026 ${escapeHtml(BRAND_NAME)}</p>
+        <div class="app-footer-logo-wrap">
+          <img class="app-footer-logo" src="${escapeHtml(BRAND_LOGO_SRC)}" alt="Kleer">
+        </div>
+      </footer>
     `;
   }
 

@@ -386,3 +386,22 @@ test("app source exposes contact media inputs and media store wiring", () => {
   assert.match(appSource, /NetworKingMediaStore/);
   assert.match(htmlSource, /src\/media-store\.js/);
 });
+
+test("branding source exposes kleer identity, footer, and favicon", () => {
+  const appSource = fs.readFileSync(path.join(__dirname, "..", "src", "app.js"), "utf8");
+  const htmlSource = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
+  const stylesSource = fs.readFileSync(path.join(__dirname, "..", "src", "styles.css"), "utf8");
+
+  assert.match(htmlSource, /<title>Networ-King by Kleer<\/title>/);
+  assert.match(htmlSource, /assets\/kleer-favicon\.ico/);
+  assert.match(appSource, /Networ-King by Kleer/);
+  assert.match(appSource, /&copy; 2026/);
+  assert.match(appSource, /class="app-footer"/);
+  assert.match(appSource, /assets\/kleer-black-logo\.webp/);
+  assert.match(stylesSource, /--background: #204864/);
+});
+
+test("branding assets exist locally", () => {
+  assert.ok(fs.existsSync(path.join(__dirname, "..", "assets", "kleer-black-logo.webp")));
+  assert.ok(fs.existsSync(path.join(__dirname, "..", "assets", "kleer-favicon.ico")));
+});

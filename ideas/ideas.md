@@ -1,14 +1,10 @@
 Pendientes:
 
-- Permitir la opción de editar contacto, en la vista de detalles de cada contacto (por si uno se equivoca escribiendo alguno de los datos o quiere agregar información en campos no obligatorios, un rato después de haber creado el contacto).
-
-- Permitir subir una a tres fotos por cada contacto (podrían ser fotos sacadas durante el evento y/o la tarjeta de presentación, por ejemplo). Estos campos se podrían llamar "Fotos" (permitir subir hasta dos) y "Tarjeta de contacto" para que cada cosa esté separada.
-
-- Permitir editar mis datos de contacto.
-
-- Al crear cada contacto, ofrecer (mediante una casilla de checkeo) sincronizar al contacto con los contactos del teléfono (de Google).
+Quiero que en la página de bienvenida (donde se crea el Evento) diga Networ-King by Kleer y aparezca debajo de todo el logo de Kleer: https://www.kleer.la/app/img/black_logo.webp ... y me gustaría también que se use el favicon de Kleer (lo podés buscar en www.kleer.la). Que el color de fondo sea #204864 este en vez del verdecito actual. Y que el logo de Kleer aparezca también abajo de todo en toda la experiencia de la app, nuevamente, debajo de "(C) 2026 Networ-King by Kleer" (la C de copyright, idealmente).
 
 - Permitir subir una foto al crear un contacto o al editarlo (en la vista detallada). Puede ser sacada en el momento desde la app o subida desde las fotos del dispositivo).
+
+- Al crear cada contacto, ofrecer (mediante una casilla de checkeo) sincronizar al contacto con los contactos del teléfono (de Google).
 
 - Poder adquirir datos de un contacto a partir de un código QR.
 
@@ -39,3 +35,9 @@ Listas:
 - Ver ficha resumida de cada contacto.
 
 - Una vez seleccionado un evento, no mostrar más el campo "Evento" ni en la creación de contacto nuevo.
+
+- Permitir la opción de editar contacto, en la vista de detalles de cada contacto (por si uno se equivoca escribiendo alguno de los datos o quiere agregar información en campos no obligatorios, un rato después de haber creado el contacto).
+
+- Permitir editar mis datos de contacto.
+
+- Permitir subir una a tres fotos por cada contacto (podrían ser fotos sacadas durante el evento y/o la tarjeta de presentación, por ejemplo). Estos campos se podrían llamar "Fotos" (permitir subir hasta dos) y "Tarjeta de contacto" para que cada cosa esté separada.
