@@ -1,0 +1,10 @@
+{
+  "name": "networ-king",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test tests/domain.test.js",
+    "check": "node --check src/domain.js && node --check src/media-store.js && node --check src/app.js"
+  }
+}
